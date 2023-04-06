@@ -1,4 +1,4 @@
-from model import Student
+from models import Student
 from dataclasses import replace
 
 # Class providing access to the database

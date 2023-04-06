@@ -32,7 +32,7 @@ The [`Student`](model/student.py) class is the in-memory representation of stude
 
 Contains unit tests and associated test data.
 
-#### [`test_datastore.py`](tests/test_datstore.py)
+#### [`test_datastore.py`](tests/test_datastore.py)
 
 Unit tests for the `Datastore` class.
 
@@ -54,5 +54,5 @@ SQL executed before each test.  It should reset the database into a know state (
 2.  If necessary, [install mysql-connector-python](https://dev.mysql.com/doc/connector-python/en/connector-python-installation-binary.html)
 3.  In the project directory, run the tests:
     ```
-    python3 -m unittest discover
+    python3 -m unittest discover -s tests
     ```

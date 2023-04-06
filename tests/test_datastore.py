@@ -3,7 +3,7 @@ from datetime import date
 import mysql.connector
 import os
 import re
-from model import Student
+from models import Student
 from db import Datastore
 
 
