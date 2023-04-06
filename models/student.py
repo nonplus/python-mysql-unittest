@@ -6,6 +6,8 @@ from dataclasses import dataclass
 
 @dataclass
 class Student:
+    """Class representing a student"""
+
     name: str
     dob: date
     grade: int

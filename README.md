@@ -8,7 +8,7 @@ This example shows how to write Python MySQL unit tests
 python-mysql-unittest/
 ├─ db /
 │  ├─ datastore.py       # Datastore
-├─ model/
+├─ models/
 │  ├─ student.py         # Student model
 ├─ tests/
 │  ├─ test_datastore.py  # Datastore unit tests
@@ -26,7 +26,7 @@ The constructor takes a database connection:
 
 ### `models`
 
-The [`Student`](model/student.py) class is the in-memory representation of student records stored in the database.
+The [`Student`](models/student.py) class is the in-memory representation of student records stored in the database.
 
 ### `tests`
 
