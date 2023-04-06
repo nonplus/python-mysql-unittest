@@ -3,7 +3,7 @@ from datetime import date
 import mysql.connector
 import os
 import re
-from model import Student
+from models import Student
 from db import Datastore
 
 
@@ -24,9 +24,9 @@ class MyTestCase(unittest.TestCase):
             Student(name='Alice', dob=date(2010, 12, 25), grade=5))
 
         # Verify
-        self.assertEqual(student, self.datastore.list_students()[0])
+        self.assertEqual(student, self.datastore.list_all_students()[0])
 
-    def test_list_students_returns_all_students(self):
+    def test_list_all_students_returns_all_students(self):
         # Setup
         student1 = self.datastore.insert_student(
             Student(name='Alice', dob=date(2010, 12, 25), grade=5))
@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
             Student(name='Bob', dob=date(2010, 3, 13), grade=2))
         
         # Exercise
-        students = self.datastore.list_students()
+        students = self.datastore.list_all_students()
 
         #Verify
         self.assertEqual(students, [student1, student2])

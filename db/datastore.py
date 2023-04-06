@@ -1,10 +1,10 @@
-from model import Student
+from models import Student
 from dataclasses import replace
-
-# Class providing access to the database
 
 
 class Datastore:
+    """Class providing access to the database"""
+
     def __init__(self, connection) -> None:
         self.connection = connection
 
@@ -17,7 +17,7 @@ class Datastore:
         finally:
             cursor.close()
 
-    def list_students(self) -> list[Student]:
+    def list_all_students(self) -> list[Student]:
         cursor = self.connection.cursor()
         try:
             cursor.execute(
