@@ -54,5 +54,5 @@ SQL executed before each test.  It should reset the database into a know state (
 2.  If necessary, [install mysql-connector-python](https://dev.mysql.com/doc/connector-python/en/connector-python-installation-binary.html)
 3.  In the project directory, run the tests:
     ```
-    python3 -m unittest discover -s tests
+    python -m unittest discover -s tests
     ```
