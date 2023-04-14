@@ -27,7 +27,7 @@ Create a separate database user to use for testing. This way you won't accidenta
 1.  With the `test` user selected, go to the "Schema privileges" tab and click "Add Entry..."
 2.  In the "New Schema Privilge Definition" dialog:
     - Choose "Selected schema", select the "testdb" schema, and click "OK"
-      ![Grant ALL access rights](all_access_rights.png)
+      ![New Schema Privilege Definition](new_schema_privilege_definition.png)
 3.  In the "Schema Privileges" tab:
     - Click "Select ALL", and apply
-      ![New Schema Privilege Definition](new_schema_privilege_definition.png)
+      ![Grant ALL access rights](all_access_rights.png)
